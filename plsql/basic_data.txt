@@ -1,0 +1,115 @@
+AND (to check for both conditions to be true)
+OR (to check for one of the conditions to be true)
+ Between (selects for a given range)
+In (matches any value in the list)
+NOT (to negate the given condition)
+
+Order By Clause
+To sort in ascending (ASC) or descending order (DESC)
+Aggregate Functions
+Aggregare functions perform a calculation on a set of values, and return a single value.
+COUNT( )
+MAX( )
+MIN( )
+SUM( )
+AVG( )
+
+Group By Clause
+Groups rows that have the same values into summary rows.
+It collects data from multiple records and groups the result by one or more column.
+*Generally we use group by with some aggregation function
+
+Having Clause
+Similar to Where i.e. applies some condition on rows.
+Used when we want to apply any condition after grouping.
+Count number of students in each city where max marks cross 90.
+
+select count(name), city from student group by city having max(marks) >90;
+General Order
+SELECT column(s)
+FROM table_name
+WHERE condition
+GROUP BY column(s)
+HAVING condition
+ORDER BY column(s) ASC
+
+Cascading for FK
+
+On Delete Cascade
+When we create a foreign key using this option, it deletes the referencing rows in the child table
+when the referenced row is deleted in the parent table which has a primary key.
+
+On Update Cascade 
+When we create a foreign key using UPDATE CASCADE the referencing rows are updated in the child
+table when the referenced row is updated in the parent table which has a primary key.
+
+create table student(
+id int primary key,
+course_id int,
+foreign key(course_id) references course(id)
+on delete cascade
+on delete cascade
+);
+
+
+Joins in SQL
+Join is used to combine rows from two or more tables, based on a related column between them.
+
+Returns records that have matching values in both tables
+Syntax
+SELECT column(s)
+FROM tableA
+INNER JOIN tableB
+ON tableA.col_name = tableB.col_name;
+
+Left Join
+Returns all records from the left table, and the matched records from
+the right table
+Syntax
+SELECT column(s)
+FROM tableA
+LEFT JOIN tableB
+ON tableA.col_name = tableB.col_name;
+
+Right Join
+Returns all records from the right table, and the matched records
+from the left table
+Syntax
+SELECT column(s)
+FROM tableA
+RIGHT JOIN tableB
+ON tableA.col_name = tableB.col_name
+
+Full Join
+Returns all records when there is a match in either left or right table
+
+
+Union
+It is used to combine the result-set of two or more SELECT statements.
+Gives UNIQUE records.
+Syntax
+SELECT column(s) FROM tableA
+UNION
+SELECT column(s) FROM tableB
+
+SQL Sub Queries
+A Subquery or Inner query or a Nested query is a query within another SQL query.
+Query
+Sub Query
+It involves 2 select statements.
+Syntax
+SELECT column(s)
+FROM table_name
+WHERE col_name operator
+( subquery );
+
+
+A view is a virtual table based on the result-set of an SQL statement.
+
+create view view1 as select  rollno, name from student;
+
+select * from view1;
+
+*A view always shows up-to-date data. The
+database engine recreates the view, every time a
+user queries it.
