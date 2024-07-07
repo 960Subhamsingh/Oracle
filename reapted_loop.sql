@@ -1,3 +1,5 @@
+set serveroutput on
+
 DECLARE
   l_output NUMBER;
 BEGIN
