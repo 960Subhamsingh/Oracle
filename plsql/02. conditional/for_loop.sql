@@ -59,6 +59,7 @@ dbms_output.put_line(num ||'*' || i || '=' || num*i);
 end loop;
 end;
 
+-- create table with for loop reverse form
 
 declare
 num number(2):=2;
@@ -68,12 +69,23 @@ dbms_output.put_line(num*i);
 end loop;
 end;
 
-
+-- create table with for loop reverse form
 declare
 num number(2):=2;
 begin
 for i in reverse 1..10 loop
 dbms_output.put_line(num ||'*' || i || '=' || num*i);
 end loop;
+end;
+
+-- create multiple  table 
+-- create table  1 to 10 
+begin
+for x in 1..10 loop
+for y in 1..10 loop
+dbms_output.put_line(x || '*' || y || '=' || x*y);
+end loop; 
+dbms_output.new_line;
+end loop; 
 end;
 
