@@ -2,7 +2,7 @@
 
 ## Main table of customers
 
-``
+```
 SQL> select * from customers;
 
 CUSTOMERID  CUSTOMERNAME      CONTACT CITY         PINCODE
@@ -18,7 +18,7 @@ CUSTOMERID  CUSTOMERNAME      CONTACT CITY         PINCODE
          9 Ravi            8756452314 Orisa        345678
         10 Suman           9.8766E+11 Gujarat      456734
         11 Anirudh         9203032345 Malad        455612
-        ``
+```
 
 ### create table oldcustomer as (select * from customers where 1=0);
 
@@ -32,11 +32,11 @@ for each row
 begin
 insert into oldcustomer values(:old.customerid , :old.customername, :old.contact, :old.city, :old.pincode);
 end;
-/
-``
-## change the city of  customer table 
 
-``
+```
+### change the city of  customer table 
+
+```
 SQL> update customers set city = 'Delhi' where customerid =1;
 
 1 row updated.
@@ -63,5 +63,25 @@ CUSTOMERID CUSTOMERNAME       CONTACT CITY         PINCODE
 ---------- --------------- ---------- ------------ ------------
          1 Abhimanyu       9123324564 bokaro       827001
          1 Abhimanyu       9123324564 bokaro       827001
-``
+```
 
+```
+SQL> create or replace trigger cs_customers
+    before update on customers
+    for each row
+    declare
+    trans varchar2(10);
+    begin
+     :new.city  := case when :old.city = 'patna' then 'R'
+    else :new.city
+    end;
+  end;
+
+
+Trigger created.
+
+SQL> update customers set city='Delhi' where city='Delhi';
+
+2 rows updated.
+
+```

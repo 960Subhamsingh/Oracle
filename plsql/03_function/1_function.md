@@ -7,7 +7,6 @@ SQL> create or replace function ssum(num1 int , num2 int ) return number
     return num1+num2;
     end;
 ```
-
 ```
 SQL> select ssum(12,45) from dual;
 
@@ -15,6 +14,7 @@ SSUM(12,45)
 -----------
          57
 ```
+
 
 ### sum of two nuber with calling function 
 
