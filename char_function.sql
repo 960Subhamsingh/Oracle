@@ -3,6 +3,7 @@
 --It convert first lower lettre of string to uppercase.
 select initcap('SUBHAM KUMAR') from dual;
 -- It will find location of  String 's' in 'data' String.
+
 select instr('Subham Kumar singh',' s') from dual
 
  

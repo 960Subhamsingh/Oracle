@@ -1,3 +1,7 @@
+
+---------------------------- Current System Date--------------------------
+SELECT SYSDATE FROM DUAL;
+
 ---------------------------- timestamp--------------------------
 SQL> begin
    dbms_output.put_line(to_timestamp ('2009-09-21 ', 'YYYY-MM-DD'));

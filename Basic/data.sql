@@ -7,7 +7,7 @@ insert into employees values('E1002','suman','kumar','123457',date'2015-12-31','
 
 insert into employees values('E1003','Raj','Kumar',123458,date'2012-09-12','M','tamil nadu','300',50000,'3002','5');
 
-insert into employees values('E1004','Santosh','Kumar',123459,date'2016-08-12','M','Chennai','400',60000,'30002','5')
+insert into employees values('E1004','Santosh','Kumar',123459,date'2016-08-12','M','Chennai','400',60000,'30002','5');
 
 insert into employees values('E1005','Aman','kumar',123410,date'2018-06-21','M','Chennai','500',70000,'30001','2');
 

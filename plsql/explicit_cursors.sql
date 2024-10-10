@@ -1,18 +1,19 @@
 SQL> declare
-  2  emp_first_name employees.first_name%type;
-  3  emp_last_name employees.last_name%type;
-  4  cursor e_employee is
-  5  select first_name, last_name from employees where emp_no >10050;
-  6  begin
-  7  open e_employee;
-  8  loop
-  9  fetch e_employee into emp_first_name, emp_last_name;
- 10  exit when e_employee%notfound;
- 11  dbms_output.put_line(emp_first_name || ' '|| emp_last_name);
- 12  end loop;
- 13  close e_employee;
- 14  end;
- 15  /
+    emp_first_name employees.first_name%type;
+    emp_last_name employees.last_name%type;
+    cursor e_employee is
+    select first_name, last_name from employees where emp_no >10050;
+    begin
+    open e_employee;
+    loop
+    fetch e_employee into emp_first_name, emp_last_name;
+   exit when e_employee%notfound;
+   dbms_output.put_line(emp_first_name || ' '|| emp_last_name);
+   end loop;
+   close e_employee;
+   end;
+  /
+  
 Hidefumi Caine
 Heping Nitsch
 Sanjiv Zschoche

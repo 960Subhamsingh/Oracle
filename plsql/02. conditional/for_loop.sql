@@ -89,3 +89,11 @@ dbms_output.new_line;
 end loop; 
 end;
 
+-- see ename and sal with for loop
+ begin
+    for i in(select * from emp)loop
+    if(i.sal=1100) then
+    dbms_output.put_line('ename : ' || i.ename || ' salary :' || i.sal);
+    end if;
+    end loop;
+    end;
