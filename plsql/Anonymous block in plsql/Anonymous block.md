@@ -29,8 +29,8 @@ BEGIN
 
     DBMS_OUTPUT.PUT_LINE('Employee Name: ' || v_employee_name);  
 EXCEPTION  
-    WHEN NO_DATA_FOUND THEN
-        DBMS_OUTPUT.PUT_LINE('No employee found with that ID.');  
+    WHEN NO_DATA_FOUND THEN  
+        DBMS_OUTPUT.PUT_LINE('No employee found   with that ID.');   
 END; 
 /
 
