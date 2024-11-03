@@ -10,7 +10,7 @@ An anonymous block typically consists of three main sections:
 1. Declaration Section (optional):  
 
 This section is where you declare variables, cursors, and other PL/SQL constructs. It starts with the keyword DECLARE. 
-
+  --optional
 2. Execution Section:  
 
 This is the main part of the block where you write the   procedural code to be executed. It starts with the keyword BEGIN and contains the executable statements.
