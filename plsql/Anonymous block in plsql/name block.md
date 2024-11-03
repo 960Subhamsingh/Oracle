@@ -48,27 +48,27 @@ A package is a collection of related procedures, functions, variables, and other
 
 **Example:** 
 
-CREATE OR REPLACE PACKAGE employee_pkg IS
-    PROCEDURE get_employee_name (p_employee_id IN NUMBER);
-    FUNCTION get_employee_salary (p_employee_id IN NUMBER) RETURN NUMBER;
-END employee_pkg;
-/
-4. Trigger
+CREATE OR REPLACE PACKAGE employee_pkg IS  
+    PROCEDURE get_employee_name (p_employee_id IN NUMBER);  
+    FUNCTION get_employee_salary (p_employee_id IN NUMBER) RETURN NUMBER;  
+END employee_pkg;  
+/ 
+
+4. **Trigger**
+
 A trigger is a named block that automatically executes in response to specific events on a table, such as INSERT, UPDATE, or DELETE.
 
-Example:
+**Example:**
 
-plsql
-Copy code
-CREATE OR REPLACE TRIGGER employee_salary_check
-BEFORE INSERT OR UPDATE ON employees
-FOR EACH ROW
-BEGIN
-    IF :NEW.salary < 0 THEN
-        RAISE_APPLICATION_ERROR(-20001, 'Salary cannot be negative');
-    END IF;
-END;
-/
+CREATE OR REPLACE TRIGGER employee_salary_check  
+BEFORE INSERT OR UPDATE ON employees  
+FOR EACH ROW   
+BEGIN  
+    IF :NEW.salary < 0 THEN  
+        RAISE_APPLICATION_ERROR(-20001, 'Salary cannot be negative');  
+    END IF;  
+END;  
+/  
 
 **Key Differences from Anonymous Blocks** 
 
