@@ -5,7 +5,7 @@
 *****************************************************************************
 01. PLSQL tutorial for beginners
 02. Introduction to PLSQL tutorial
-03. [What is an anonymous block in PLSQL?, what is a named block in PLSQL?](<../plsql/Anonymous block in plsql/Anonymous block.md>)
+03. [What is an anonymous block in PLSQL?, what is a named block in PLSQL?](<../plsql/Anonymous block in plsql>)
 04. How to practice PLSQL in SQL developer?
 05. Add two numbers in PLSQL code
 06. What is constant in PLSQL variable? 
