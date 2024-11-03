@@ -7,20 +7,20 @@
 02. [Introduction to PLSQL tutorial](<../plsql/indroduction in PLSQL/SQL.txt>)
 03. [What is an anonymous block in PLSQL?, what is a named block in PLSQL?](<../plsql/Anonymous block in plsql>)
 04. How to practice PLSQL in SQL developer?
-05. Add two numbers in PLSQL code
-06. What is constant in PLSQL variable? 
-07. What is not null in PLSQL variable? 
+05. [Add two numbers in PLSQL code](<../plsql/01. Fundamental/add two number.sql>)
+06. [What is constant in PLSQL variable?](<../plsql/01. Fundamental/constant.md>)
+07. [What is not null in PLSQL variable?](<../plsql/01. Fundamental/not Null in plSql.md>) 
 08. Select statements in PLSQL block
 09. DML statements in PLSQL block
 10. Type and RowType in PLSQL Block
-11. Conditional statements in PLSQL
-12. IF statement in PLSQL block
-13. CASE statement in PLSQL block
-14. Looping statements in PLSQL
-15. Simple loop in PLSQL
-16. While loop in PLSQL
-17. FOR loop in PLSQL
-18. cursor in PLSQL
+11. [Conditional statements in PLSQL](<../plsql/02. conditional/>)
+12. [IF statement in PLSQL block](<../plsql/02. conditional/if.sql>)
+13. [CASE statement in PLSQL block](<../plsql/02. conditional/Case_statement.sql>)
+14. [Looping statements in PLSQL](<../plsql/02. conditional/>)
+15. [Simple loop in PLSQL](<../plsql/02. conditional/loop.sql>)
+16. [While loop in PLSQL](<../plsql/02. conditional/while_loop.sql>)
+17. [FOR loop in PLSQL](<../plsql//02. conditional/for_loop.sql>)
+18. [cursor in PLSQL](<../plsql/cursor/>)
 19. Types of Cursor in PLSQL
 20. Explicit cursor in PLSQL
 21. Cursor FOR loop in PLSQL
