@@ -14,3 +14,11 @@ Benefit PL/SQL
     Exception
      <statements>
     END;
+
+
+**Example:**
+
+begin 
+dbms_output.put_line('HELLO PLSQL');
+end;
+
