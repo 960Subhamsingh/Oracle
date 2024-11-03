@@ -1,0 +1,17 @@
+1) Create a table called EMP with the following structure.
+-- create a employee table with following structure
+2) Add a column experience to the emp table . Experience numeric null allowed.
+3) drop a column experience to the emp table.
+4) insert alleast five values for each column of emp table
+5) Update the dept no to 1 whole salary are greater than 50000
+6) select Ename from emp where Empl_no = 1;
+7) Create dept table with  the following structure
+8) insert atleast five values for each column of dept table.
+9)select all the records have dept_no= 101;
+10) update the deptno=1 whose dept is CSE.
+11)Truncate the emp table and drop the dept table.
+
+ 
+
+
+to_date('12-jan-2012','DD-MON-YYYY')
