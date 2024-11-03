@@ -1,0 +1,16 @@
+What is PL/SQL
+
+PL/SQL - Procedural LAnguage extension to SQL with design features of programming languages.
+
+Data manipulation and query statements of SQL are include within Procedural units of code.
+
+Benefit PL/SQL
+ 1. improved performance
+ 2. Modularize program development
+    Declare
+     <statements>
+    Begin
+     <statements>
+    Exception
+     <statements>
+    END;
