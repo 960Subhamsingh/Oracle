@@ -12,7 +12,7 @@
 07. [What is not null in PLSQL variable?](<../plsql/01. Fundamental/not Null in plSql.md>) 
 08. Select statements in PLSQL block
 09. DML statements in PLSQL block
-10. Type and RowType in PLSQL Block
+10. [Type and RowType in PLSQL Block](<../plsql/Type and Rowtype/type and RowTpe.md>)
 11. [Conditional statements in PLSQL](<../plsql/02. conditional/>)
 12. [IF statement in PLSQL block](<../plsql/02. conditional/if.sql>)
 13. [CASE statement in PLSQL block](<../plsql/02. conditional/Case_statement.sql>)
