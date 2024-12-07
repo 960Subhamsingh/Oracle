@@ -1,0 +1,22 @@
+-- Create  Tablespace
+-- Syntax
+
+CREATE TABLESPACE "logical_name"
+DATAFILE 'path\file_nome.dbf'
+SIZE [size]M
+
+-- Exemplo
+CREATE TABLESPACE ABC
+DATAFILE 'C:\oraclexe\app\oracle\oradata\XE\Abc.dbf'
+SIZE 10M;
+
+
+ALTER SESSION SET "_ORACLE_SCRIPT"=true;   
+
+
+CREATE USER sr
+IDENTIFIED BY sr
+DEFAULT TABLESPACE ABC
+TEMPORARY TABLESPACE TEMP
+ACCOUNT UNLOCK
+PROFILE DEFAULT;

@@ -6,11 +6,11 @@
 01. PLSQL tutorial for beginners
 02. [Introduction to PLSQL tutorial](<../plsql/indroduction in PLSQL/SQL.txt>)
 03. [What is an anonymous block in PLSQL?, what is a named block in PLSQL?](<../plsql/Anonymous block in plsql>)
-04. How to practice PLSQL in SQL developer?
+04. [How to practice PLSQL in SQL developer?]
 05. [Add two numbers in PLSQL code](<../plsql/01. Fundamental/add two number.sql>)
 06. [What is constant in PLSQL variable?](<../plsql/01. Fundamental/constant.md>)
 07. [What is not null in PLSQL variable?](<../plsql/01. Fundamental/not Null in plSql.md>) 
-08. Select statements in PLSQL block
+08. [Select statements in PLSQL block](<../plsql/Select statement/select statetment.md>)
 09. DML statements in PLSQL block
 10. [Type and RowType in PLSQL Block](<../plsql/Type and Rowtype/type and RowTpe.md>)
 11. [Conditional statements in PLSQL](<../plsql/02. conditional/>)
