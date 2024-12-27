@@ -1,0 +1,54 @@
+--DBMS_UTILITY.FORMAT_ERROR_STACK 
+
+
+CREATE OR replace PACKAGE test_oracle
+IS
+  PROCEDURE main;
+END test_oracle;
+
+/
+CREATE OR replace PACKAGE BODY test_oracle
+IS
+  PROCEDURE Fun5
+  IS
+    ln_dummy_number NUMBER;
+  BEGIN
+      ln_dummy_number := 1 / 0; -- Kept to raise an exception
+  END;
+  PROCEDURE Fun4
+  IS
+  BEGIN
+      fun5;
+  END;
+  PROCEDURE Fun3
+  IS
+  BEGIN
+      fun4;
+  END;
+  PROCEDURE Fun2
+  IS
+  BEGIN
+      fun3;
+  END;
+  PROCEDURE Main
+  IS
+  BEGIN
+      fun2;
+  EXCEPTION
+    WHEN OTHERS THEN
+               dbms_output.Put_line('Format error stack:'
+                                    ||dbms_utility.Format_error_stack());
+
+               dbms_output.Put_line('Print error stack:'
+                                    ||Chr(10)
+                                    ||dbms_utility.Format_error_backtrace());
+  END;
+END test_oracle;
+
+/
+
+
+
+BEGIN
+    test_oracle.main();
+END;
