@@ -1,3 +1,5 @@
+set serveroutput ON
+
 /*
 Error reporting generally refers to the process of capturing, handling, and 
 reporting errors that occur during the execution of SQL statements, 
@@ -84,9 +86,11 @@ stack for deeper error analysis. This can be helpful in tracing the sequence of
 errors that led to a failure.
 */
  
+ 
 BEGIN
    -- some operation that raises an exception
-   SELECT * FROM non_existing_table;
+   -- SELECT * FROM non_existing_table;
+    SELECT * FROM employees;
 EXCEPTION
    WHEN OTHERS THEN
       DBMS_OUTPUT.PUT_LINE('Error Stack: ' || DBMS_UTILITY.FORMAT_ERROR_STACK);
